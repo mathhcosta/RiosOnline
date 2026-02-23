@@ -360,7 +360,19 @@ with col_mapa1:
 
 # ================= MAPA WINDY =================
 with col_mapa2:
-    st.markdown("### 🌬️ Condições atmosféricas (Windy)")
+    st.markdown(
+        """
+        <div style="
+            font-size:16px;
+            font-weight:600;
+            margin-bottom:8px;
+            color:#1f4e79;
+        ">
+            🌬️ Condições atmosféricas (Windy)
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     components.html(
         """
@@ -465,6 +477,7 @@ with c5:
 
 with c6:
     st.plotly_chart(grafico_frequencia(df, COL_FREQ_MIN, "Frequência de Mínimas"), use_container_width=True)
+
 
 
 
