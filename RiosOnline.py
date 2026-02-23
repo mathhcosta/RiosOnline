@@ -36,7 +36,7 @@ st.markdown(
         border-bottom:1px solid #d9d9d9;
     ">
         <span style="
-            font-size:18px;
+            font-size:22px;
             font-weight:600;
             letter-spacing:0.5px;
             color:#1f4e79;
@@ -453,5 +453,6 @@ with c5:
 
 with c6:
     st.plotly_chart(grafico_frequencia(df, COL_FREQ_MIN, "Frequência de Mínimas"), use_container_width=True)
+
 
 
