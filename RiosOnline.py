@@ -250,8 +250,8 @@ def carregar_estacoes(pasta_estacoes):
 
 
 # ================= INPUT =================
-pasta_dados = "C:/RiosOnline/dados_excel"
-pasta_estacoes = "C:/RiosOnline/estacoes"
+pasta_dados = "dados_excel"
+pasta_estacoes = "estacoes"
 
 if "codigo_estacao" not in st.session_state:
     st.session_state["codigo_estacao"] = None
@@ -445,3 +445,4 @@ with c5:
 
 with c6:
     st.plotly_chart(grafico_frequencia(df, COL_FREQ_MIN, "Frequência de Mínimas"), use_container_width=True)
+
