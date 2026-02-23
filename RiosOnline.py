@@ -27,19 +27,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown(
-    "<h2 style='text-align:center'>Sala de Situação – Rios Online</h2>",
-    unsafe_allow_html=True
-)
-st.markdown(
     """
-    <div style='text-align:center; margin-bottom:6px;'>
-        <span style='font-size:13px; color:#555; letter-spacing:1px;'>
-            Instituições colaboradoras
+    <div style="
+        text-align:center;
+        padding:4px 0px;
+        margin-top:-15px;
+        margin-bottom:8px;
+        border-bottom:1px solid #d9d9d9;
+    ">
+        <span style="
+            font-size:18px;
+            font-weight:600;
+            letter-spacing:0.5px;
+            color:#1f4e79;
+        ">
+            Sala de Situação – Rios Online
         </span>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 col0, col1, col2, col3, col4 = st.columns([2,3,3,3,2])
 
@@ -445,4 +453,5 @@ with c5:
 
 with c6:
     st.plotly_chart(grafico_frequencia(df, COL_FREQ_MIN, "Frequência de Mínimas"), use_container_width=True)
+
 
