@@ -312,7 +312,19 @@ pais_selecionado = st.selectbox(
 
 # ================= MAPA ESTAÇÕES =================
 with col_mapa1:
-    st.markdown("### Estações fluviais")
+    st.markdown(
+        """
+        <div style="
+            font-size:16px;
+            font-weight:600;
+            margin-bottom:8px;
+            color:#1f4e79;
+        ">
+            Estações fluviais
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # Centro padrão
     lat_centro = -3.5
@@ -453,6 +465,7 @@ with c5:
 
 with c6:
     st.plotly_chart(grafico_frequencia(df, COL_FREQ_MIN, "Frequência de Mínimas"), use_container_width=True)
+
 
 
 
